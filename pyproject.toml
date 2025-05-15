@@ -1,0 +1,17 @@
+[project]
+name = "mcp-demo-pypi"
+version = "0.1.0"
+description = "A MCP server to get info from pypi."
+requires-python = ">=3.10"
+license = "MIT"
+readme = "README.md"
+dependencies = [
+    "mcp[cli]>=1.6",
+    "fastapi>=0.115",
+    "requests>=2.32",
+    "beautifulsoup4>=4.13"
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
